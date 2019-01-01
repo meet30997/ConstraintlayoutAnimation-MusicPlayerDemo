@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:progressDrawable="@drawable/seekbar"
+            android:minHeight="6dip"
+            android:maxHeight="6dip"
+            android:thumb="@drawable/thumb_image"
+
+    />
+    <TextView android:layout_width="wrap_content"
+              android:text="0:00"
+              android:textColor="#ece9e9"
+              android:layout_alignStart="@id/seekBar"
+              android:layout_below="@id/seekBar"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toBottomOf="@+id/seekBar"
+              app:layout_constraintStart_toStartOf="@+id/seekBar" android:id="@+id/textView"/>
+    <TextView android:layout_width="wrap_content"
+              android:text="4:15"
+              android:textColor="#ece9e9"
+              android:layout_alignEnd="@id/seekBar"
+              android:layout_below="@id/seekBar"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toBottomOf="@+id/seekBar" android:layout_marginEnd="8dp"
+              app:layout_constraintEnd_toEndOf="@+id/seekBar"/>
+
+</android.support.constraint.ConstraintLayout>

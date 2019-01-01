@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <ImageView android:layout_width="35dp"
+               android:src="@drawable/ic_down"
+               android:id="@+id/back"
+               android:layout_height="35dp" android:layout_marginTop="8dp"
+               app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+               android:layout_marginStart="16dp"/>
+    <ImageView android:layout_width="wrap_content"
+               android:src="@drawable/ic_volume"
+               android:layout_height="wrap_content" android:id="@+id/imageView5"
+               app:layout_constraintEnd_toStartOf="@+id/imageView4" android:layout_marginTop="8dp"
+               app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="32dp"/>
+    <ImageView android:layout_width="20dp"
+               android:src="@drawable/ic_graphic_eq"
+               android:layout_height="wrap_content" android:id="@+id/imageView4"
+               app:layout_constraintEnd_toStartOf="@+id/imageView11" android:layout_marginTop="8dp"
+               app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="32dp"/>
+    <ImageView android:layout_width="wrap_content"
+               android:src="@drawable/ic_more"
+               android:layout_height="wrap_content" android:id="@+id/imageView11"
+               app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp" android:layout_marginTop="8dp"
+               app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>
